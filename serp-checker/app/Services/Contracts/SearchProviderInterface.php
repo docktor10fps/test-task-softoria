@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\Search\Contracts;
+namespace App\Services\Contracts;
 
 use App\DTO\SearchDTO;
 
