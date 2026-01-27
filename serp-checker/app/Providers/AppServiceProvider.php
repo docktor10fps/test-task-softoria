@@ -11,7 +11,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        $this->app->bind(
+            \App\Services\Contracts\SearchProviderInterface::class,
+            \App\Services\DataForSEOService::class
+        );
     }
 
     /**
