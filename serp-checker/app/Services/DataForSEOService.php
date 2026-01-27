@@ -17,6 +17,7 @@ class DataForSEOService implements SearchProviderInterface
         $config = Config::get('services.dataforseo');
 
         $response = Http::withBasicAuth($config['login'], $config['password'])
+            ->withoutVerifying()
             ->withHeaders(['Content-Type' => 'application/json'])
             ->post($config['url'], $data->toApiArray());
 
