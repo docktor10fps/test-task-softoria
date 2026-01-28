@@ -8,8 +8,6 @@
 </head>
 <body class="bg-gray-100 p-10">
 <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
-    <h1 class="text-2xl font-bold mb-6 text-center text-blue-600">Google Rank Checker</h1>
-
     <form action="{{ route('search.store') }}" method="POST" class="space-y-4">
         @csrf
         <div>
@@ -25,11 +23,11 @@
         <div class="grid grid-cols-2 gap-4">
             <div>
                 <label class="block text-sm font-medium text-gray-700">Локація</label>
-                <input type="text" name="location_name" value="{{ old('location_name', 'United States') }}" required class="w-full border rounded-md p-2 mt-1">
+                <input type="text" name="location_name" value="{{ old('location_name', 'Ukraine') }}" required class="w-full border rounded-md p-2 mt-1">
             </div>
             <div>
                 <label class="block text-sm font-medium text-gray-700">Мова</label>
-                <input type="text" name="language_name" value="{{ old('language_name', 'English') }}" required class="w-full border rounded-md p-2 mt-1">
+                <input type="text" name="language_name" value="{{ old('language_name', 'Ukrainian') }}" required class="w-full border rounded-md p-2 mt-1">
             </div>
         </div>
 

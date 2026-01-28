@@ -7,8 +7,8 @@ readonly class SearchDTO
     public function __construct(
         public string $keyword,
         public string $targetSite,
-        public string $locationName = 'United States',
-        public string $languageName = 'English',
+        public string $locationName = 'Ukraine',
+        public string $languageName = 'Ukrainian',
         public int $depth = 100
     ) {}
 
