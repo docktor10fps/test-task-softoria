@@ -11,16 +11,18 @@
 
 1. **Клонуйте репозиторій та встановіть залежності:**
    ```bash
-   git clone [https://github.com/docktor10fps/test-task-softoria.git](https://github.com/docktor10fps/test-task-softoria.git)
+   git clone https://github.com/docktor10fps/test-task-softoria.git
    cd test-task-softoria/serp-checker
    composer install
-
+    ```
 2. **Налаштуйте файл оточення:**
 
    - Скопіюйте .env.example у .env.
-   - Виконайте команду php artisan key:generate. 
    - Вкажіть ваші DATAFORSEO_LOGIN та DATAFORSEO_PASSWORD у .env
-   
+   - Виконайте команду:
+   ```bash
+   php artisan key:generate
+   ```
 3. **Запустіть сервер:**
 
     ```bash
