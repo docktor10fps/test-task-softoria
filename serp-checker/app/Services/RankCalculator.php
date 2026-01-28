@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use App\DTO\SearchDTO;
+use App\Enums\ResultType;
 use App\Services\Contracts\SearchProviderInterface;
 
 class RankCalculator
@@ -21,7 +22,7 @@ class RankCalculator
         $items = $response['tasks'][0]['result'][0]['items'] ?? [];
 
         foreach ($items as $item) {
-            if (($item['type'] ?? '') !== 'organic') {
+            if (($item['type'] ?? '') !== ResultType::ORGANIC->value) {
                 continue;
             }
 
